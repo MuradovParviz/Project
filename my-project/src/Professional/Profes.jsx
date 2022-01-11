@@ -72,6 +72,11 @@ const Profesdiv = styled.div`
         padding: 30px 0;
         display: flex;
         flex-direction: column;
+        font-family: Euclid Circular A;
+
+        h2{
+            margin-bottom: 40px;
+        }
     
     .profesdiv2 {
         width: 100%;
@@ -115,12 +120,21 @@ const Profesdiv = styled.div`
     }
     .card-small h3{
         margin-top: 50px;
+        font-size: 20px;
        
     }
     .card-small h5{
-        margin: 5px 0px;
+        margin: 15px 0px;
+        font-size: 16px;
         color: #828282;
-       
+        
+    }
+    .card-small p{
+        font-size: 14px;
+        color: #333;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-right: 10px;
     }
 
     .card-big1{

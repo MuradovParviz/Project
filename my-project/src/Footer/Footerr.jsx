@@ -88,6 +88,8 @@ const FooterBig = styled.div`
 
     width: 100%;
     height: 411px;
+   background-color: #f5f5f7;
+    
 
 .footerTop{
     width: 100%;
@@ -141,6 +143,7 @@ const FooterBig = styled.div`
 .footer2 ul li a{
     text-decoration: none;
     color: #4f4f4f;
+    font-family: Euclid Circular A;
 }
 .footer3 {
     width: 20%;
@@ -169,6 +172,7 @@ const FooterBig = styled.div`
 .footer3 ul li a{
     text-decoration: none;
     color: #4f4f4f;
+    font-family: Euclid Circular A;
 }
 .footer4 {
     width: 25%;
@@ -179,6 +183,7 @@ const FooterBig = styled.div`
     flex-direction: column;
     margin-top: 35px;
     padding-top: 60px;
+    font-family: Euclid Circular A;
     
 }
 .footer4 ul {
@@ -187,16 +192,23 @@ const FooterBig = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: left;
  
 }
 .footer4 ul li{
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
 }
 .footer4 ul li a{
     text-decoration: none;
     color: #4f4f4f;
+    margin-left: 10px;
+    
 }
 .footer4 ul li img{
     margin-top: 10px;
@@ -255,6 +267,7 @@ const FooterBig = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #f5f5f7;
 
 .footerTop{
     width: 100%;
@@ -379,6 +392,7 @@ const FooterBig = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #f5f5f7;
 
 .footerTop{
     width: 100%;

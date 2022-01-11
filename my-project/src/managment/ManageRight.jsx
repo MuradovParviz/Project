@@ -28,7 +28,7 @@ import calendar from "../managment/managmentimg/calendar.png"
                  </div>
                      <div className="mandiv">
                          <p className="manP">7 yanvar, 2021</p>
-                         <p>Son müraciət tarixi 5 yanvar</p>
+                         <p className="manP1">Son müraciət tarixi 5 yanvar</p>
                      </div>
                  </div>
                  <div className="ManageR2Div3 ManageR2div">
@@ -37,7 +37,7 @@ import calendar from "../managment/managmentimg/calendar.png"
                  </div>
                      <div className="mandiv">
                          <p className="manP">48 saat</p>
-                         <p>Həftədə 6 saaat olmaqla</p>
+                         <p className="manP1">Həftədə 6 saaat olmaqla</p>
                      </div>
                  </div>
                  <div className="ManageR2Div4 ManageR2div">
@@ -83,13 +83,15 @@ import calendar from "../managment/managmentimg/calendar.png"
  }
  export default ManageRight;
  const ManageRightDiv = styled.div`
+    
      
      width: 35%;
      height: auto;
      display: flex;
      flex-direction: column;
      align-items: center;
-
+     font-family: Euclid Circular A;
+     margin-left: 20px;
      @media screen and (max-width:600px) and (min-width: 300px){
         width: 100%;
      height: auto;
@@ -97,6 +99,9 @@ import calendar from "../managment/managmentimg/calendar.png"
      flex-direction: column;
      align-items: center;
      margin-top: 40px;
+     font-family: Euclid Circular A;
+    
+
      }
      @media screen and (max-width:900px) and (min-width: 600px){
         width: 100%;
@@ -105,6 +110,7 @@ import calendar from "../managment/managmentimg/calendar.png"
      flex-direction: column;
      align-items: center;
      margin-top: 40px;
+     font-family: Euclid Circular A;
      }
  `
  const ManageRight1 = styled.div`
@@ -132,7 +138,7 @@ width: 388px;
 
 
  .ManageR2div{
-    width: 200px;
+    width: 300px;
     height: 50px;
     margin-top: 2px;
     display: flex;
@@ -150,7 +156,7 @@ width: 388px;
  }
 
  .mandiv{
-     width: 160px;
+     width: 250px;
      height: 80%;
      font-size: 10px;
      display: flex;
@@ -160,7 +166,19 @@ width: 388px;
      padding-left: 10px;
  }
  .manP{
-     font-size: 14px;
+    font-family: Euclid Circular A;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+ }
+ .manP1{
+    font-family: Euclid Circular A;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+     
  }
     
  @media screen and (max-width:600px) and (min-width: 300px){
@@ -176,6 +194,9 @@ width: 388px;
  width: 388px;
  height: auto;
  padding-bottom: 10px;
+ padding-top: 30px;
+ margin-top: 15px;
+ border-top: 1px solid #828282;
 
  button{
      width: 384px;
@@ -221,16 +242,19 @@ const ManageBottom2 = styled.div`
 @media screen and (min-width:900px) {
        
         display: none;
+       
     }
     @media screen and (max-width:900px) and (min-width: 600px){
         width: 90%;
         text-align: left;
         margin-top: 10px ;
+        font-family: Euclid Circular A;
     }
     @media screen and (max-width:600px) and (min-width: 300px){
         
         width: 90%;
         text-align: left;
+        font-family: Euclid Circular A;
     }
 `
  

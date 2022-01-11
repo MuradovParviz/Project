@@ -64,7 +64,10 @@ const Teachingdiv =styled.div`
     width: 100%;
     height: auto;
     padding-top: 40px;
-
+    font-family: Euclid Circular A;
+h2{
+    margin-bottom: 20px;
+}
 .teaching-small{
     width: 100%;
     height: auto;
@@ -87,12 +90,12 @@ const Teachingdiv =styled.div`
 .Tcard h3 {
 
     color: #4f4f4f;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .Tcard p {
 
 color: #4f4f4f;
-margin-top: 10px;
+margin-top: 20px;
 }
 
 .Tcard:hover{
@@ -115,6 +118,7 @@ margin-top: 10px;
     width: 100%;
     height: auto;
     padding-top: 40px;
+    font-family: Euclid Circular A;
     
 
 .teaching-div-p{
@@ -174,6 +178,7 @@ margin-top: 10px;
     width: 100%;
     height: auto;
     padding-top: 40px;
+    font-family: Euclid Circular A;
 
 .teaching-div-p{
     width: 70%;

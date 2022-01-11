@@ -48,6 +48,8 @@ const Startdiv = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: Euclid Circular A;
+        margin-top: 50px;
         
          
    
@@ -122,6 +124,7 @@ const Startdiv = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: Euclid Circular A;
         
          
     
@@ -194,6 +197,7 @@ const Startdiv = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: Euclid Circular A;
             
              
         

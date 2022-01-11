@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import managImg1 from "../managment/managmentimg/Ellipse 94.png"
 import star from "../managment/managmentimg/star.png"
-import star1 from "../managment/managmentimg/star 1.png"
+import star1 from "../managment/managmentimg/star 1.png";
 
 const ManageLeft =()=>{
 
@@ -60,17 +60,20 @@ const ManageLeftDiv = styled.div`
     height: 100%;
     margin-top: 40px;
     
+    font-family: Euclid Circular A;
+    
+    
  @media screen and (max-width: 600px) and (min-width: 300px){
    
     width: 100%;
+    font-family: Euclid Circular A;
 
      
  } 
  @media screen and (max-width: 900px) and (min-width: 300px){
    
    width: 100%;
-
-    
+   font-family: Euclid Circular A;    
 }  
 `
 
@@ -81,11 +84,11 @@ const ManageTop = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10px;
-
+    font-family: Euclid Circular A;
     .manageToph2{
      width: 80%;
      font-size: 20px;
+     font-family: Euclid Circular A;
 
     }
     .managSmall{
@@ -94,6 +97,8 @@ const ManageTop = styled.div`
         margin-top: 10px;
         display: flex;
         align-items: center;
+        
+        
     }
     .ManageCirle{
         width: 40px;
@@ -118,17 +123,20 @@ const ManageTop = styled.div`
         .manageToph2{
          width: 80%;
          font-size: 17px;
+         font-family: Euclid Circular A;
 
     }
     
      
 } 
 
+
 @media screen and (max-width: 900px) and (min-width: 600px){
 
 .manageToph2{
  width: 80%;
  font-size: 22px;
+ font-family: Euclid Circular A;
 
 }
 
@@ -145,6 +153,11 @@ const ManageBottom = styled.div`
     align-items: flex-start;
     flex-direction: column;
     text-align: left;
+    font-family: Euclid Circular A;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
 
 
     p{
@@ -154,6 +167,7 @@ const ManageBottom = styled.div`
     @media screen and (max-width: 600px) and (min-width: 300px){
 
     display: none;
+    
      
 } 
 @media screen and (max-width: 900px) and (min-width: 600px){

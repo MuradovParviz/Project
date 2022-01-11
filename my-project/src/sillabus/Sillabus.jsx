@@ -59,25 +59,29 @@ const Sillabusdiv = styled.div`
     padding: 30px 0;
     background-color: #f7eefd;
     position: relative;
+    font-family: Euclid Circular A;
 
 .sillabusTop{
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-end;
     position: relative;
+    padding-bottom: 15px;
    
 }
 .sillabusTop h2{
     position: absolute;
-    left: 180px;
+    left: 80px;
+    font-size: 34px;
+    color: #4f4f4f;
 }
 .divButton{
-    width: 15%;
-    height: 50px;
-    margin-left: 20px;
+    width: 202px;
+    height: 57px;
     position: absolute;
-    right: 180px;
+    right: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,6 +105,13 @@ const Sillabusdiv = styled.div`
     align-items: center;
     flex-direction: column;
 }
+.sillabusBottom p{
+    font-size: 16px;
+    color: #4f4f4f;
+}
+.sillabusBottom h3{
+    font-size: 20px;
+}
 .sBotSmall{
     width: 60%;
     text-align: left;
@@ -110,6 +121,7 @@ const Sillabusdiv = styled.div`
 }
 .sBotSmall h3{
     margin-bottom: 10px;
+   
 }
 
 
@@ -140,10 +152,10 @@ const Sillabusdiv = styled.div`
 .sBotSmall2::before{
     content: "";
     width: 1px;
-    height: 470px;
+    height: 430px;
     background-color: black;
     position: absolute;
-    top: -150px;
+    top: -135px;
     left: -140px;
 }
 .sBotSmall3::after{

@@ -1,7 +1,6 @@
 import React from "react";
 import ManageLeft from "../managment/ManageLeft";
 import styled from "styled-components";
-import "./manage.css"
 import ManageRight from "./ManageRight";
 
 const Manage =()=>{
@@ -12,6 +11,7 @@ const Manage =()=>{
         <ManageRight />
         
         </ManageDiv>
+        
         
     )
 }
@@ -30,9 +30,10 @@ const ManageDiv = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 
     }
-    @media screen and (max-width:900px) and (min-width: 600px){
+    @media screen and (max-width:1200px) and (min-width: 600px){
     width: 100%;
     height: auto;
     display: flex;

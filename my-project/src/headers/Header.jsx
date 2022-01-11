@@ -2,7 +2,7 @@ import React from "react";
 import Task from "../headers/hedimg/Taskool 1 1.png"
 import Search from "../headers/hedimg/search.png"
 import Elipse from "../headers/hedimg/Ellipse 92.png"
-import Style from "style-components";
+
 import {NavLink} from "react-router-dom";
 import styled from "styled-components";
 
@@ -95,8 +95,8 @@ const Headerbigdiv=styled.div`
     position: relative;
 }
 .header2 input{
-    width: 70%;
-    height: 50%;
+    width: 384px;
+    height: 40px;
     border: 0;
     border-radius: 10px;
     padding-left: 40px;
@@ -124,14 +124,14 @@ const Headerbigdiv=styled.div`
     border-top: 1px solid #f4f4f4;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .headerBottom ul {
-    width: 80%;
+    width: 78%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 170px;
 }
 .headerBottom ul li{
     list-style: none;
@@ -141,6 +141,10 @@ const Headerbigdiv=styled.div`
 }
 .headerBottom ul li a{
     text-decoration: none;
+    color: #828282;
+}
+.headerBottom ul li a:hover{
+    color: #333;
 }
 }
 
