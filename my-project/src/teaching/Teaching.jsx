@@ -65,6 +65,10 @@ const Teachingdiv =styled.div`
     height: auto;
     padding-top: 40px;
     font-family: Euclid Circular A;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
 h2{
     margin-bottom: 20px;
 }

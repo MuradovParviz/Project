@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import React , {useEffect , useState} from 'react';
 import './App.css';
 import Header from './headers/Header';
 import Footerr from './Footer/Footerr';
@@ -13,7 +14,10 @@ import {Routes,Route,Link} from "react-router-dom";
 
 
 
+
 function App() {
+
+  
   return (
     <div className="App">
      <Header />

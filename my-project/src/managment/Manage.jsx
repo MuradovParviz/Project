@@ -1,9 +1,21 @@
-import React from "react";
+import React , {useEffect , useState} from 'react';
 import ManageLeft from "../managment/ManageLeft";
 import styled from "styled-components";
 import ManageRight from "./ManageRight";
+import axios from "axios";
 
 const Manage =()=>{
+
+
+    const [products,setProducts]= useState([])
+  useEffect(()=>{
+     axios.get("http://3.68.156.86:8000/api/v1/core/course/12/")
+    .then(res => setProducts(res.data))
+      
+      
+    },[]);
+
+
     return(
         
         <ManageDiv>

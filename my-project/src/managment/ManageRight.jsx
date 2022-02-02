@@ -1,16 +1,31 @@
-import React from "react";
+import React , {useEffect , useState} from 'react';
 import styled from "styled-components";
 import bar from "../managment/managmentimg/bar-chart-2.png";
 import language from "../managment/managmentimg/Language.png";
 import clock from "../managment/managmentimg/clock.png";
 import calendar from "../managment/managmentimg/calendar.png"
+import axios from "axios";
+import ReactPlayer from "react-player";
 
 
  const ManageRight =()=>{
+
+
+    const [products,setProducts]= useState([])
+    useEffect(()=>{
+       axios.get("http://3.68.156.86:8000/api/v1/core/course/12/")
+      .then(res => setProducts(res.data))
+
+      
+        
+        
+      },[]);
+
+
      return(
          <ManageRightDiv>
              <ManageRight1>
-
+             <ReactPlayer width="100%" height="100%" url={products.video}/>
              </ManageRight1>
              <ManageRight2>
 
@@ -19,7 +34,7 @@ import calendar from "../managment/managmentimg/calendar.png"
                          <img src={language} alt="" />
                      </div>
                      <div className="mandiv">
-                         <p className="manP">Azərbaycanca</p>
+                         <p className="manP">{products.language} </p>
                      </div>
                  </div>
                  <div className="ManageR2Div2 ManageR2div">
@@ -28,7 +43,7 @@ import calendar from "../managment/managmentimg/calendar.png"
                  </div>
                      <div className="mandiv">
                          <p className="manP">7 yanvar, 2021</p>
-                         <p className="manP1">Son müraciət tarixi 5 yanvar</p>
+                         <p className="manP1">{products.course_deadline}</p>
                      </div>
                  </div>
                  <div className="ManageR2Div3 ManageR2div">
@@ -53,7 +68,7 @@ import calendar from "../managment/managmentimg/calendar.png"
              <ManageRight3>
                <div >
                    <p className="manRight3P1">Ümumi:</p>
-                   <p className="manRight3P2">21 AZN</p>
+                   <p className="manRight3P2">{products.price}</p>
                </div>
                <button>Əlavə et</button>
              </ManageRight3>
@@ -113,13 +128,17 @@ import calendar from "../managment/managmentimg/calendar.png"
      font-family: Euclid Circular A;
      }
  `
+
+ 
  const ManageRight1 = styled.div`
      
  width: 488px;
  height: 340px;
- background-color: black;
+ /* background-color: black; */
  border: 0;
  border-radius: 10px;
+
+ 
 
  @media screen and (max-width:600px) and (min-width: 300px){
     width: 328px;

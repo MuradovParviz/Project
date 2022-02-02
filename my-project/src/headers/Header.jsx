@@ -6,7 +6,8 @@ import Elipse from "../headers/hedimg/Ellipse 92.png"
 import {NavLink} from "react-router-dom";
 import styled from "styled-components";
 
-const Header =()=>{
+
+const Header =({Product})=>{
 
     return(
         <Headerbigdiv>
@@ -31,22 +32,23 @@ const Header =()=>{
                 <ul>
                     <li>
                         <NavLink activeSyle={{color:"black"}} to="/">
-                        Home
+                        Home 
+                        
                         </NavLink>
                     </li>
-                    <li>></li>
+                    <li>{">"}</li>
                     <li>
                         <NavLink to="/Design">
                         Design
                         </NavLink>
                         </li>
-                    <li>></li>
+                    <li>{">"}</li>
                     <li>
                         <NavLink to="/UX/UI design">
                         UX/UI design
                         </NavLink>
                     </li>
-                    <li>></li>
+                    <li>{">"}</li>
                     <li>
                         <NavLink to="/Grow">
                         Grow your creative business in design field

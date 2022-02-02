@@ -1,24 +1,37 @@
-import React from "react";
+import React , {useEffect , useState} from 'react';
 import styled from "styled-components";
 import managImg1 from "../managment/managmentimg/Ellipse 94.png"
 import star from "../managment/managmentimg/star.png"
 import star1 from "../managment/managmentimg/star 1.png";
+import axios from "axios";
 
 const ManageLeft =()=>{
+
+
+    const [productss,setProductss]= useState([])
+    useEffect(()=>{
+       axios.get("http://3.68.156.86:8000/api/v1/core/course/12/")
+      .then(res => setProductss(res.data))
+
+      
+        
+        
+      },[]);
+
 
     return(
         <ManageLeftDiv>
             <ManageTop>
             <h2 className="manageToph2">
-            Management Skills: New Manager Training in Essential Skills
+            {productss.title}
             </h2>
             <div className="managSmall">
                 <div className="ManageCirle">
-                  <img src={managImg1} alt="" />
+                  <img src={productss.image} alt="" />
                   
                   </div>
                   <div className="ManageStar1">
-                    <h6>Gunel Mammadova</h6>
+                    <h6>{productss.teacher}</h6>
                     <div className="ManageStar2">
                      <img src={star} alt="" />
                      <img src={star} alt="" />
@@ -32,21 +45,7 @@ const ManageLeft =()=>{
             </ManageTop>
             <ManageBottom>
                 <h2>Kurs haqqında</h2>
-                <p>
-                Ready to grow the creative business of your dreams? Whether you’re itching to go full-time 
-                freelance or looking for ways to supercharge your existing biz, it’s time to really make it happen. 
-                Join freelancer and creative business expert Kaleigh Moore for a live, two-week crash-course where you’ll 
-                learn everything you need to set up (and manage!) a thriving creative business that you love. <br /> <br />
-
-                As a part of this exclusive learning series, you’ll master the most intimidating elements of running a business, 
-                gain actionable pricing strategies & techniques that will allow you to charge more for your work, and ultimately 
-                gain more confidence as a business owner so you can spend more time focusing on what you do best—creating. <br /> <br />
-
-
-                In this first 3-hour course, Kaleigh will get into the nitty gritty of setting up your business for success including
-                 strategies for targeting clients, approaching the value conversation, contracts, invoicing, and everything in between. 
-                 Plus, Kaleigh will equip you with the tools you need to set and present your rates to clients—and most importantly—how 
-                 to justify the value proposition behind the work that you do.  <a href="#">Davamını oxu...</a>
+                <p> {productss.description}  <a href="#">Davamını oxu...</a>
                 </p>
 
             </ManageBottom>
