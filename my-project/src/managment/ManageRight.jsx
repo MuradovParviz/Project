@@ -25,7 +25,8 @@ import ReactPlayer from "react-player";
      return(
          <ManageRightDiv>
              <ManageRight1>
-             <ReactPlayer width="100%" height="100%" url={products.video}/>
+             <ReactPlayer width="100%" height="100%" border-radius="10px" url={products.video}/>
+             
              </ManageRight1>
              <ManageRight2>
 
@@ -115,6 +116,7 @@ import ReactPlayer from "react-player";
      align-items: center;
      margin-top: 40px;
      font-family: Euclid Circular A;
+     
     
 
      }

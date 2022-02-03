@@ -8,10 +8,10 @@ import axios from "axios";
 const ManageLeft =()=>{
 
 
-    const [productss,setProductss]= useState([])
+    const [products,setProducts]= useState([])
     useEffect(()=>{
        axios.get("http://3.68.156.86:8000/api/v1/core/course/12/")
-      .then(res => setProductss(res.data))
+      .then(res => setProducts(res.data))
 
       
         
@@ -23,15 +23,15 @@ const ManageLeft =()=>{
         <ManageLeftDiv>
             <ManageTop>
             <h2 className="manageToph2">
-            {productss.title}
+            {products.title}
             </h2>
             <div className="managSmall">
                 <div className="ManageCirle">
-                  <img src={productss.image} alt="" />
+                  <img src={products.image} alt="" />
                   
                   </div>
                   <div className="ManageStar1">
-                    <h6>{productss.teacher}</h6>
+                    <h6>{products.teacher}</h6>
                     <div className="ManageStar2">
                      <img src={star} alt="" />
                      <img src={star} alt="" />
@@ -45,7 +45,7 @@ const ManageLeft =()=>{
             </ManageTop>
             <ManageBottom>
                 <h2>Kurs haqqında</h2>
-                <p> {productss.description}  <a href="#">Davamını oxu...</a>
+                <p> {products.description}  <a href="#">Davamını oxu...</a>
                 </p>
 
             </ManageBottom>
